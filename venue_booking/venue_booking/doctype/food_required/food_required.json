@@ -1,0 +1,51 @@
+{
+ "creation": "2021-02-11 12:37:04.214713",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "food_available",
+  "quantity",
+  "price2",
+  "total2"
+ ],
+ "fields": [
+  {
+   "fieldname": "food_available",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Food Available",
+   "options": "Food"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fetch_from": "food_available.price",
+   "fieldname": "price2",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price"
+  },
+  {
+   "fieldname": "total2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-12 08:36:06.871961",
+ "modified_by": "Administrator",
+ "module": "Venue Booking",
+ "name": "Food Required",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

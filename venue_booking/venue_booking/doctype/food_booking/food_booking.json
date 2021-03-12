@@ -1,0 +1,79 @@
+{
+ "autoname": "FB - .#####",
+ "creation": "2021-02-11 12:42:05.045859",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "venue_booking_id",
+  "customer_id",
+  "meals_option",
+  "total_amount",
+  "payment",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "venue_booking_id",
+   "fieldtype": "Link",
+   "label": "Venue Booking ID",
+   "options": "Venue Booking"
+  },
+  {
+   "fieldname": "meals_option",
+   "fieldtype": "Table",
+   "label": "Meals Option",
+   "options": "Food Required"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Read Only",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Select",
+   "label": "Payment",
+   "options": "\nCash\nCard\nUPI"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Food Booking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Customer ID",
+   "options": "Customer"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-02-12 08:49:03.107561",
+ "modified_by": "Administrator",
+ "module": "Venue Booking",
+ "name": "Food Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

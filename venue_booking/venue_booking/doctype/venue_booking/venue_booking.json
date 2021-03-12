@@ -1,0 +1,115 @@
+{
+ "autoname": "VB - .#####",
+ "creation": "2021-02-11 12:18:55.716107",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "venue",
+  "food_required",
+  "date_section",
+  "from_date",
+  "to_date",
+  "time_slot_section",
+  "from1",
+  "to1",
+  "total_amount",
+  "payment_method",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Link",
+   "label": "Venue",
+   "options": "Venues"
+  },
+  {
+   "fieldname": "food_required",
+   "fieldtype": "Select",
+   "label": "Food Required",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "date_section",
+   "fieldtype": "Section Break",
+   "label": "Date"
+  },
+  {
+   "fieldname": "time_slot_section",
+   "fieldtype": "Section Break",
+   "label": "Time Slot"
+  },
+  {
+   "fieldname": "from1",
+   "fieldtype": "Datetime",
+   "label": "From"
+  },
+  {
+   "fieldname": "to1",
+   "fieldtype": "Time",
+   "label": "To"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Read Only",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Select",
+   "label": "Payment Method",
+   "options": "Cash\nCard\nUPI\nCheque"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Venue Booking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-02-16 12:54:49.926762",
+ "modified_by": "Administrator",
+ "module": "Venue Booking",
+ "name": "Venue Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

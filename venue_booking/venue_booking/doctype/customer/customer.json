@@ -1,0 +1,75 @@
+{
+ "autoname": "CUST - .#####",
+ "creation": "2021-02-11 12:47:20.042428",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "phone_number",
+  "email",
+  "profession",
+  "address",
+  "post_code",
+  "country"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "profession",
+   "fieldtype": "Select",
+   "label": "Profession",
+   "options": "Science and Engineering\nDoctor\nBusiness\nIT\nOther"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "post_code",
+   "fieldtype": "Data",
+   "label": "Post Code"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  }
+ ],
+ "modified": "2021-02-11 12:47:21.371213",
+ "modified_by": "Administrator",
+ "module": "Venue Booking",
+ "name": "Customer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

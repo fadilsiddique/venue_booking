@@ -1,0 +1,65 @@
+{
+ "autoname": "field:venue_name",
+ "creation": "2021-02-11 12:48:46.905045",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "venue_name",
+  "seating_capacity",
+  "facilities_available",
+  "price",
+  "booking_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "venue_name",
+   "fieldtype": "Data",
+   "label": "Venue Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "seating_capacity",
+   "fieldtype": "Data",
+   "label": "Seating Capacity"
+  },
+  {
+   "fieldname": "facilities_available",
+   "fieldtype": "Table",
+   "label": "Facilities Available",
+   "options": "Venue Facilities"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "label": "Price"
+  },
+  {
+   "fieldname": "booking_status",
+   "fieldtype": "Table",
+   "label": "Booking Status",
+   "options": "Booking Schedule"
+  }
+ ],
+ "modified": "2021-02-12 11:56:21.590577",
+ "modified_by": "Administrator",
+ "module": "Venue Booking",
+ "name": "Venues",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
